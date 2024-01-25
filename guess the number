@@ -1,0 +1,18 @@
+import random
+list = [*range(0, 50, 1)] 
+print(list)
+number1= random.choice(list)
+number= int(number1)
+yourguess= int(input("Whats your guess?"))
+while True:
+    if number==yourguess:
+        print("yayy you got it right")
+        break
+    elif number!=yourguess:
+         if number > yourguess:
+             print("greater than that")
+          
+         elif number < yourguess:
+             print("lesser than that")
+    yourguess = int(input("whats your guess"))        
+        
